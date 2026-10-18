@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.35" />
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Shield / Hexagon -->
+  <rect x="25" y="25" width="450" height="450" rx="95" fill="url(#shieldGrad)" filter="url(#shadow)" />
+  
+  <!-- Sleek Inner Border Accent -->
+  <rect x="42" y="42" width="416" height="416" rx="80" fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-opacity="0.85" />
+
+  <!-- Background Decorative Tech Ring -->
+  <circle cx="250" cy="230" r="160" fill="none" stroke="white" stroke-opacity="0.08" stroke-width="32" stroke-dasharray="14 10" />
+
+  <!-- Stylized Icon: Hexagonal Gear Cog -->
+  <g transform="translate(250, 215) scale(0.92)">
+    <!-- Rotating Gear Outer -->
+    <circle cx="0" cy="0" r="125" fill="#0f172a" fill-opacity="0.4" stroke="url(#cyanGrad)" stroke-width="8" />
+
+    <!-- Stylized Wrench & Screwdriver in Cross -->
+    <path d="M-65,-65 L-25,-25 M65,65 L25,25" stroke="url(#goldGrad)" stroke-width="16" stroke-linecap="round" />
+    <path d="M65,-65 L25,-25 M-65,65 L-25,25" stroke="url(#cyanGrad)" stroke-width="16" stroke-linecap="round" />
+
+    <!-- Dynamic Central Monogram 'P' for Pavan -->
+    <path d="M-45,-70 L15,-70 C48,-70 70,-50 70,-15 C70,20 48,40 15,40 L-15,40 L-15,75 L-45,75 Z" fill="white" filter="url(#shadow)" />
+    <!-- 'P' Counter Inner Hole -->
+    <path d="M-15,-40 L12,-40 C28,-40 38,-30 38,-15 C38,0 28,10 12,10 L-15,10 Z" fill="url(#shieldGrad)" />
+
+    <!-- Electric Lightning / Spark Bolt inside P loop -->
+    <path d="M5,-25 L-5,-5 L8,-5 L-2,20 L16,-2 L5,-2 Z" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Lower Banner: Enterprises -->
+  <rect x="75" y="375" width="350" height="60" rx="30" fill="url(#goldGrad)" filter="url(#shadow)" />
+  <text x="250" y="415" font-family="'Inter', 'Montserrat', Arial, sans-serif" font-weight="900" font-size="28" fill="#0f172a" text-anchor="middle" letter-spacing="4">PAVAN ENTERPRISES</text>
+  
+  <!-- Upper Tagline -->
+  <text x="250" y="90" font-family="'Inter', sans-serif" font-weight="700" font-size="16" fill="#e0e7ff" text-anchor="middle" letter-spacing="3">SALES &amp; SERVICE • PUNE</text>
+</svg>

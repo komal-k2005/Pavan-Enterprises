@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Enterprises - Home Appliances Sales & Service in Pune</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon using custom logo -->
+    <link rel="icon" href="./images/logo.svg" type="image/svg+xml">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950 text-white text-xs py-2 px-4 border-b border-blue-900/40">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-2 font-medium">
+                <span class="inline-block w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span>
+                <span>Fast Doorstep Service across Dhayari Phata, Sinhgad Rd & All Pune</span>
+            </div>
+            <div class="flex items-center space-x-5 text-gray-300">
+                <a href="tel:+919604001387" class="hover:text-yellow-400 transition flex items-center font-bold">
+                    <i class="fas fa-phone-alt text-yellow-400 mr-1.5"></i> +91 9604001387
+                </a>
+                <a href="mailto:abujpavan96@gmail.com" class="hover:text-yellow-400 transition hidden md:flex items-center">
+                    <i class="fas fa-envelope text-blue-400 mr-1.5"></i> abujpavan96@gmail.com
+                </a>
+                <span class="text-yellow-400 font-semibold hidden lg:inline">★ 4.9 Rated (500+ Verified Pune Reviews)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <!-- Custom Brand Logo -->
+                <a href="#home" class="flex items-center space-x-3 cursor-pointer group">
+                    <div class="w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform bg-white border border-blue-100 p-1">
+                        <img src="./images/logo.svg" alt="Pavan Enterprises Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-1.5">
+                            <span class="text-xl sm:text-2xl font-black text-gray-900 leading-tight tracking-tight">PAVAN</span>
+                            <span class="text-xl sm:text-2xl font-black text-blue-600 leading-tight tracking-tight">ENTERPRISES</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500 font-medium tracking-wide">Sales & Service • Sinhgad Rd, Pune</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-5">
+                    <a class="nav-link text-gray-700 hover:text-blue-600 font-semibold text-sm" href="#home">Home</a>
+                    <a class="nav-link text-gray-700 hover:text-blue-600 font-semibold text-sm" href="#services">Services</a>
+                    <a class="nav-link text-gray-700 hover:text-blue-600 font-semibold text-sm" href="#how-it-works">How It Works</a>
+                    <a class="nav-link text-gray-700 hover:text-blue-600 font-semibold text-sm" href="#appliances">Appliances</a>
+                    <a class="nav-link text-gray-700 hover:text-blue-600 font-semibold text-sm" href="#workspace">Our Work</a>
+                    <a class="nav-link text-gray-700 hover:text-blue-600 font-semibold text-sm" href="#testimonials">Reviews</a>
+                    <a class="nav-link text-gray-700 hover:text-blue-600 font-semibold text-sm" href="#faq">FAQ</a>
+                    <a class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:shadow-lg transition-all transform hover:scale-105 flex items-center" href="#book">
+                        <i class="fas fa-calendar-check mr-2"></i> Book Online
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 space-y-2 border-t pt-3">
+                <a class="block text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg font-medium" href="#home">Home</a>
+                <a class="block text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg font-medium" href="#services">Services</a>
+                <a class="block text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg font-medium" href="#how-it-works">How It Works</a>
+                <a class="block text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg font-medium" href="#appliances">Appliances</a>
+                <a class="block text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg font-medium" href="#workspace">Our Work</a>
+                <a class="block text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg font-medium" href="#testimonials">Reviews</a>
+                <a class="block text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg font-medium" href="#faq">FAQ</a>
+                <a class="block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2.5 rounded-lg text-center font-bold mt-2 shadow" href="#book">Book Service</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Animated Ambient Lighting -->
+    <section id="home" class="hero-gradient pt-14 pb-16 lg:pt-20 lg:pb-24 text-white relative">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Content (7 Cols) -->
+                <div class="lg:col-span-7 space-y-6" data-aos="fade-right">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div class="inline-flex items-center bg-white/15 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-white/20 shadow-sm">
+                            <i class="fas fa-certificate text-yellow-300 mr-2 text-base"></i> Pune's Trusted Appliance Sales & Repair Destination
+                        </div>
+                        <div class="inline-flex items-center bg-yellow-400/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold border border-yellow-400/40 text-yellow-300">
+                            <i class="fas fa-star text-yellow-400 mr-1.5"></i> 4.9/5 Rating (480+ Happy Homes in Sinhgad Rd)
+                        </div>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight">
+                        Washing Machine, Fridge, Microwave or Purifier Faulty?
+                        <span class="block text-yellow-300 mt-2 font-extrabold">Expert Doorstep Repair in Pune!</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-xl text-blue-100 leading-relaxed font-normal max-w-2xl">
+                        <strong>Pavan Enterprises</strong> provides reliable doorstep diagnostics, genuine brand spare parts, and guaranteed repairs for all major home appliances across Pune.
+                    </p>
+
+                    <!-- Trust Pillars (No Prices) -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1 text-xs sm:text-sm font-semibold text-blue-100">
+                        <div class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/15 flex items-center">
+                            <i class="fas fa-truck text-yellow-300 mr-2 text-lg"></i>
+                            <span>Same-Day Visit</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/15 flex items-center">
+                            <i class="fas fa-shield-alt text-green-300 mr-2 text-lg"></i>
+                            <span>30 Days Warranty</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/15 flex items-center col-span-2 sm:col-span-1">
+                            <i class="fas fa-check-circle text-cyan-300 mr-2 text-lg"></i>
+                            <span>100% Genuine Parts</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-3">
+                        <a class="cta-button pulse-glow-yellow bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-extrabold text-lg hover:bg-yellow-300 shadow-2xl transform hover:scale-105 transition text-center flex items-center justify-center" href="tel:+919604001387">
+                            <i class="fas fa-phone-alt mr-2.5"></i> Call: +91 9604001387
+                        </a>
+                        <a class="cta-button pulse-glow-green bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-2xl transform hover:scale-105 transition text-center flex items-center justify-center" href="#book">
+                            <i class="fab fa-whatsapp mr-2.5 text-2xl"></i> Book on WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Stats Counter -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/20 max-w-lg">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-yellow-300">15+</div>
+                            <div class="text-xs text-blue-100">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-yellow-300">5,000+</div>
+                            <div class="text-xs text-blue-100">Appliances Fixed</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-yellow-300">7 Days</div>
+                            <div class="text-xs text-blue-100">8:30 AM – 9:30 PM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Floating Status Card (5 Cols) -->
+                <div class="lg:col-span-5 relative flex justify-center" data-aos="fade-left">
+                    <div class="relative w-full max-w-md">
+                        <!-- Glow Backdrop -->
+                        <div class="absolute -inset-4 bg-gradient-to-r from-yellow-400 via-blue-500 to-pink-500 rounded-3xl blur-2xl opacity-40 animate-pulse"></div>
+                        
+                        <!-- High Quality Clean Image Card -->
+                        <div class="relative bg-white/10 backdrop-blur-xl p-3 sm:p-4 rounded-3xl border border-white/20 shadow-2xl overflow-hidden shimmer-card">
+                            <img src="./images/appliance-repairman.jpg" alt="Pavan Enterprises Certified Technician Repairing Refrigerator / Freezer" class="rounded-2xl shadow-xl w-full h-80 sm:h-96 object-cover object-center">
+                            
+                            <!-- Floating Badge 1: Location & Availability -->
+                            <div class="absolute top-6 left-6 bg-white/95 text-gray-900 px-3.5 py-2 rounded-xl shadow-lg border border-gray-100 flex items-center space-x-2">
+                                <div class="w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
+                                <div>
+                                    <div class="text-xs font-bold leading-tight">Sinhgad Rd & Dhayari Phata</div>
+                                    <div class="text-[10px] text-green-700 font-semibold">Technicians Ready for Visit</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 2: Verified Service -->
+                            <div class="absolute bottom-6 right-6 bg-gray-950/90 text-white px-4 py-2.5 rounded-xl shadow-2xl border border-yellow-400/30 flex items-center space-x-3">
+                                <i class="fas fa-medal text-yellow-400 text-2xl"></i>
+                                <div>
+                                    <div class="text-xs font-bold text-yellow-300">Pavan Abuj</div>
+                                    <div class="text-[11px] text-gray-300">Master Appliance Specialist</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Bar -->
+    <section class="bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950 py-5 text-white border-b border-gray-800 shadow-xl">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                <!-- Phone -->
+                <a href="tel:+919604001387" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-4 flex items-center space-x-4 transition cursor-pointer">
+                    <div class="w-13 h-13 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 text-gray-900 shadow-md">
+                        <i class="fas fa-phone-alt text-gray-900 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-400 font-medium">Direct Helpline (Call Anytime)</div>
+                        <div class="text-lg sm:text-xl font-black text-white">+91 9604001387</div>
+                    </div>
+                </a>
+
+                <!-- Location / Address -->
+                <a href="#contact" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-4 flex items-center space-x-4 transition cursor-pointer">
+                    <div class="w-13 h-13 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 text-white shadow-md">
+                        <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="text-xs text-gray-400 font-medium">Workshop & Shop Location</div>
+                        <div class="text-sm font-semibold text-gray-100 truncate">Shop No. 2, Akshay Sangam, Sinhgad Rd</div>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:abujpavan96@gmail.com" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-4 flex items-center space-x-4 transition cursor-pointer">
+                    <div class="w-13 h-13 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 text-white shadow-md">
+                        <i class="fas fa-envelope text-white text-xl"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="text-xs text-gray-400 font-medium">Support & Inquiry Email</div>
+                        <div class="text-sm font-bold text-gray-100 truncate">abujpavan96@gmail.com</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Carousel Section -->
+    <section class="py-12 bg-gray-200 border-b border-gray-300 overflow-hidden" id="partners">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8" data-aos="fade-up">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">All Brands Supported</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-1">Multi-Brand Appliance Repair & Spares Specialist</h2>
+                <p class="text-gray-600 text-sm max-w-xl mx-auto mt-2">
+                    Expert servicing and original components for all popular Indian and international brands.
+                </p>
+            </div>
+
+            <div class="relative overflow-hidden py-3">
+                <div class="animate-scroll flex items-center gap-10">
+                    <img src="./images/samsung.png" alt="Samsung" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/wjirlpool.png" alt="Whirlpool" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/siemens.png" alt="Siemens" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/goderj.png" alt="Godrej" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/lg.png" alt="LG" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/electrolux.png" alt="Electrolux" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/aqua.png" alt="Aqua" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/uv.png" alt="UV" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/ro.png" alt="RO" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/uf.png" alt="UF" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/pureit.png" alt="Pureit" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/aquagrand.png" alt="Aquagrand" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/kent.png" alt="Kent" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+
+                    <!-- Duplicated for seamless loop -->
+                    <img src="./images/samsung.png" alt="Samsung" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/wjirlpool.png" alt="Whirlpool" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/siemens.png" alt="Siemens" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/goderj.png" alt="Godrej" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                    <img src="./images/lg.png" alt="LG" class="h-14 md:h-16 opacity-90 hover:opacity-100 transition inline-block object-contain" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with High Quality Real Appliance Images -->
+    <section id="services" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">Expert Solutions</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Our Appliance Repair Services</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Accurate fault diagnosis, genuine spare parts, and doorstep service by certified technicians across Pune.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Washing Machine (Technician in action) -->
+                <div class="service-card bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="h-56 w-full overflow-hidden relative">
+                        <img src="./images/washingmachine.jpg" alt="Male Technician Servicing Washing Machine" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Top &amp; Front Load
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Washing Machine Repair</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Expert doorstep service by certified male technicians for front-load, top-load, and semi-automatic machines. We fix drum noise, spin failure, drain blockages, and PCB motherboards.
+                        </p>
+                        <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+                            <span class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1 rounded-full"><i class="fas fa-shield-alt mr-1"></i> 30-Day Guarantee</span>
+                            <a href="#book" class="text-blue-600 font-bold text-sm hover:text-blue-800 flex items-center">
+                                Book Technician <i class="fas fa-arrow-right ml-1.5 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Refrigerator (Technician in action) -->
+                <div class="service-card bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="h-56 w-full overflow-hidden relative">
+                        <img src="./images/refrigerators-Service-1.jpg" alt="Male Technician Repairing Refrigerator" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Single &amp; Double Door
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Refrigerator Repair &amp; Gas Refill</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Single door, double door, side-by-side &amp; deep freezers. On-site diagnosis of cooling failure, compressor tripping, genuine gas charging (R134a/R600a), defrost heaters, and thermostat faults.
+                        </p>
+                        <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+                            <span class="text-xs font-semibold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full"><i class="fas fa-check mr-1"></i> Original Gas Refill</span>
+                            <a href="#book" class="text-indigo-600 font-bold text-sm hover:text-indigo-800 flex items-center">
+                                Book Technician <i class="fas fa-arrow-right ml-1.5 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Microwave Oven (Technician in action) -->
+                <div class="service-card bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="h-56 w-full overflow-hidden relative">
+                        <img src="./images/microwave-repair-in-bangalore.jpg" alt="Male Technician Servicing Microwave" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Solo, Grill &amp; Convection
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Microwave Oven Repair</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Prompt doorstep service for microwave not heating, sparking, touch panel failure, glass turntable motor, and high-voltage magnetron replacement with genuine spares.
+                        </p>
+                        <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+                            <span class="text-xs font-semibold text-pink-700 bg-pink-50 px-3 py-1 rounded-full"><i class="fas fa-clock mr-1"></i> Fast Doorstep Fix</span>
+                            <a href="#book" class="text-pink-600 font-bold text-sm hover:text-pink-800 flex items-center">
+                                Book Technician <i class="fas fa-arrow-right ml-1.5 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: RO + UV Water Purifier (Technician in action) -->
+                <div class="service-card bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="h-56 w-full overflow-hidden relative">
+                        <img src="./images/technician-tools.jpg" alt="Male Technician Servicing Water Purifier" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-cyan-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Sales &amp; Service
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">RO + UV Water Purifiers</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Complete servicing for Kent, Aquaguard, Pureit, and custom RO systems. Membrane changes, carbon/sediment filters, booster pumps, and digital TDS testing by expert male technicians.
+                        </p>
+                        <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+                            <span class="text-xs font-semibold text-cyan-700 bg-cyan-50 px-3 py-1 rounded-full"><i class="fas fa-tint mr-1"></i> Free TDS Check</span>
+                            <a href="#book" class="text-cyan-600 font-bold text-sm hover:text-cyan-800 flex items-center">
+                                Book Technician <i class="fas fa-arrow-right ml-1.5 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Air Conditioner (Technician in action) -->
+                <div class="service-card bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="h-56 w-full overflow-hidden relative">
+                        <img src="./images/ac-technician.jpg" alt="Male Technician Servicing Split AC" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Split &amp; Window AC
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Air Conditioner (AC) Service</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Deep pressure jet-pump washing, coolant gas leak testing and recharging (R32, R410A), copper piping repair, and motherboard fix by certified male technicians.
+                        </p>
+                        <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+                            <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full"><i class="fas fa-wind mr-1"></i> Jet Pump Cleaning</span>
+                            <a href="#book" class="text-emerald-600 font-bold text-sm hover:text-emerald-800 flex items-center">
+                                Book Technician <i class="fas fa-arrow-right ml-1.5 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Air Cooler & Home Appliances (Technician in action) -->
+                <div class="service-card bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="h-56 w-full overflow-hidden relative">
+                        <img src="./images/washing-repair.png" alt="Male Technician Repairing Cooler and Motor" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Cooler &amp; Motor Repair
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Air Cooler &amp; Appliance Repair</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Desert and tower air cooler servicing. Submersible water pump replacement, heavy motor rewinding, honeycomb cooling pads, and electrical short-circuit testing.
+                        </p>
+                        <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 px-3 py-1 rounded-full"><i class="fas fa-tools mr-1"></i> Genuine Spares</span>
+                            <a href="#book" class="text-amber-600 font-bold text-sm hover:text-amber-800 flex items-center">
+                                Book Technician <i class="fas fa-arrow-right ml-1.5 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated 4-Step "How Our Service Works" Section (NO CHARGES) -->
+    <section class="py-16 bg-gradient-to-br from-blue-900 via-indigo-900 to-gray-950 text-white relative overflow-hidden" id="how-it-works">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-yellow-400 font-bold uppercase tracking-wider text-xs">Smooth & Simple Process</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-1 mb-3">How Our Service Works</h2>
+                <p class="text-blue-200 text-sm max-w-2xl mx-auto">
+                    Enjoy seamless, hassle-free doorstep appliance repair in 4 simple steps.
+                </p>
+            </div>
+
+            <!-- 4 Step Interactive Timeline -->
+            <div class="relative max-w-6xl mx-auto">
+                <div class="step-line hidden md:block"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    
+                    <!-- Step 1 -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center hover:bg-white/15 transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-14 h-14 bg-gradient-to-tr from-yellow-400 to-amber-500 text-gray-950 rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4 shadow-lg">
+                            1
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Book Appointment</h4>
+                        <p class="text-xs text-blue-200 leading-relaxed">
+                            Call us or submit the WhatsApp form with your appliance model and preferred time.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center hover:bg-white/15 transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-14 h-14 bg-gradient-to-tr from-blue-400 to-indigo-500 text-white rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4 shadow-lg">
+                            2
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Doorstep Arrival</h4>
+                        <p class="text-xs text-blue-200 leading-relaxed">
+                            Our technician arrives at your home in Dhayari/Sinhgad Rd on time with diagnostic tools.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center hover:bg-white/15 transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-14 h-14 bg-gradient-to-tr from-purple-400 to-pink-500 text-white rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4 shadow-lg">
+                            3
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Diagnosis & Quote</h4>
+                        <p class="text-xs text-blue-200 leading-relaxed">
+                            We inspect the root fault and explain the exact repair and parts required before starting.
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center hover:bg-white/15 transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                        <div class="w-14 h-14 bg-gradient-to-tr from-green-400 to-emerald-500 text-white rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4 shadow-lg">
+                            4
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Repair & Warranty</h4>
+                        <p class="text-xs text-blue-200 leading-relaxed">
+                            Repaired with genuine parts, tested in front of you, and backed by a 30-day service warranty.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#book" class="inline-flex items-center bg-yellow-400 text-gray-900 font-extrabold px-8 py-3.5 rounded-full hover:bg-yellow-300 transition shadow-xl transform hover:scale-105">
+                    <i class="fas fa-calendar-check mr-2"></i> Book A Free Inspection Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Appliance Products & Technicians Section (NO INNER PARTS) -->
+    <section class="py-16 bg-gray-50 border-b border-gray-200" id="appliances">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">Complete Appliances We Repair</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3">Our Field Technicians at Your Doorstep</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm">
+                    Our certified male technicians service the entire product at your home with care, diagnostic tools, and authentic brand components.
+                </p>
+            </div>
+
+            <!-- Appliance Products Grid (Complete finished products) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-aos="zoom-in">
+
+                <!-- 1. Washing Machine Product -->
+                <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="h-52 w-full overflow-hidden relative">
+                        <img src="./images/washingmachine.jpg" alt="Male Technician Servicing Washing Machine" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" />
+                        <div class="absolute top-3 left-3 bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Front &amp; Top Load
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1.5">Washing Machines</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-3">
+                                Fully automatic &amp; semi-automatic machines serviced right in your laundry area. Noise, vibration, water flow, and spinning issues fixed.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+                            <span class="text-blue-600 font-bold"><i class="fas fa-user-shield mr-1"></i> Trained Technician</span>
+                            <a href="#book" class="font-bold text-gray-800 hover:text-blue-600">Book Visit &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Refrigerator Product -->
+                <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="h-52 w-full overflow-hidden relative">
+                        <img src="./images/refrigerators-Service-1.jpg" alt="Male Technician Servicing Refrigerator" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" />
+                        <div class="absolute top-3 left-3 bg-indigo-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Single &amp; Double Door
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1.5">Refrigerators &amp; Freezers</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-3">
+                                Frost-free, direct cool &amp; side-by-side refrigerators. We fix cooling loss, ice blockage, door gasket, and gas refills.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+                            <span class="text-indigo-600 font-bold"><i class="fas fa-user-shield mr-1"></i> Trained Technician</span>
+                            <a href="#book" class="font-bold text-gray-800 hover:text-indigo-600">Book Visit &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Microwave Oven Product -->
+                <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="h-52 w-full overflow-hidden relative">
+                        <img src="./images/microwave-repair-in-bangalore.jpg" alt="Male Technician Servicing Microwave Oven" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" />
+                        <div class="absolute top-3 left-3 bg-pink-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Grill &amp; Convection
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1.5">Microwave Ovens</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-3">
+                                Solo, grill, and convection microwaves. Quick diagnosis of heating faults, touch control panels, turntable motors, and door safety latches.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+                            <span class="text-pink-600 font-bold"><i class="fas fa-user-shield mr-1"></i> Trained Technician</span>
+                            <a href="#book" class="font-bold text-gray-800 hover:text-pink-600">Book Visit &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. RO Water Purifier Product -->
+                <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="h-52 w-full overflow-hidden relative">
+                        <img src="./images/technician-tools.jpg" alt="Male Technician Servicing RO Water Purifier" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" />
+                        <div class="absolute top-3 left-3 bg-cyan-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            RO + UV + Mineral
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1.5">RO Water Purifiers</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-3">
+                                Wall-mounted &amp; countertop drinking water systems. Complete sanitization, TDS level checking, membrane replacement, and flow tuning.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+                            <span class="text-cyan-600 font-bold"><i class="fas fa-user-shield mr-1"></i> Trained Technician</span>
+                            <a href="#book" class="font-bold text-gray-800 hover:text-cyan-600">Book Visit &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Air Conditioner Product -->
+                <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="h-52 w-full overflow-hidden relative">
+                        <img src="./images/ac-technician.jpg" alt="Male Technician Servicing Split Air Conditioner" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" />
+                        <div class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Split &amp; Window AC
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1.5">Air Conditioners (AC)</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-3">
+                                1 Ton, 1.5 Ton &amp; 2 Ton split inverter and window AC units. Pressure jet-pump foam wash, coolant gas refill, and cooling coil inspection.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+                            <span class="text-emerald-600 font-bold"><i class="fas fa-user-shield mr-1"></i> Trained Technician</span>
+                            <a href="#book" class="font-bold text-gray-800 hover:text-emerald-600">Book Visit &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Air Cooler Product -->
+                <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="h-52 w-full overflow-hidden relative">
+                        <img src="./images/washing-repair.png" alt="Male Technician Servicing Home Appliance" class="w-full h-full object-cover transform hover:scale-105 transition duration-500" />
+                        <div class="absolute top-3 left-3 bg-amber-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Desert &amp; Room Cooler
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1.5">Air Coolers</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-3">
+                                Heavy-duty desert coolers and compact room coolers. Motor repairs, pump replacement, honeycomb cooling pad changes, and wiring safety.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+                            <span class="text-amber-600 font-bold"><i class="fas fa-user-shield mr-1"></i> Trained Technician</span>
+                            <a href="#book" class="font-bold text-gray-800 hover:text-amber-600">Book Visit &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Field Repairs & Customer Showcase -->
+    <section class="py-16 bg-white" id="workspace">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">Real Service Gallery</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3">Our Field Repairs & Customer Satisfaction</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm">
+                    A glimpse of our dedicated technicians bringing appliances back to life across Sinhgad Road and Dhayari.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-md" data-aos="zoom-in">
+                    <img src="./images/workspace-repair.jpg" alt="Component Diagnostics" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-black/40 to-transparent flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs text-yellow-300 font-bold uppercase">Motherboard Workshop</span>
+                        <h4 class="text-lg font-bold">Component-Level PCB Repair</h4>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./images/washingmachine.jpg" alt="Washing Machine Service" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-black/40 to-transparent flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs text-yellow-300 font-bold uppercase">On-Site Repair</span>
+                        <h4 class="text-lg font-bold">Washing Machine Drum & Motor</h4>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./images/customer.png" alt="Male Technician Customer Support" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-black/40 to-transparent flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs text-yellow-300 font-bold uppercase">Customer First</span>
+                        <h4 class="text-lg font-bold">Doorstep Customer Assistance</h4>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-md" data-aos="zoom-in">
+                    <img src="./images/microwave-repair-in-bangalore.jpg" alt="Microwave Oven Repair" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-black/40 to-transparent flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs text-yellow-300 font-bold uppercase">High Voltage Care</span>
+                        <h4 class="text-lg font-bold">Microwave Magnetron Overhaul</h4>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./images/refrigerators-Service-1.jpg" alt="Refrigerator Servicing" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-black/40 to-transparent flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs text-yellow-300 font-bold uppercase">Gas & Compressor</span>
+                        <h4 class="text-lg font-bold">Fridge Cooling Coil Maintenance</h4>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./images/washing-repair.png" alt="Dedicated Technicians" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-black/40 to-transparent flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs text-yellow-300 font-bold uppercase">Warranty Assured</span>
+                        <h4 class="text-lg font-bold">30 Days Service Guarantee</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Pavan Abuj Profile -->
+    <section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-200" id="about">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">About Our Center</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-6">
+                        Pune's Reliable Home Appliance Partner — Pavan Enterprises
+                    </h2>
+                    <p class="text-gray-700 text-base leading-relaxed mb-4">
+                        Founded by <strong>Pavan Abuj</strong>, <strong>Pavan Enterprises</strong> has served thousands of families across Dhayari and Sinhgad Road from our central location: <em>Shop no. 2, Akshay Sangam Apartment, Sinhgad Rd, above Rohan Wines, Dhayari Phata, Pune</em>.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Our technicians are factory-trained on modern inverter technologies. We treat each customer's home with respect, provide transparent explanations before starting repairs, and use 100% authentic manufacturer spare parts.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                            <div class="text-2xl font-black text-blue-600 mb-1">15+</div>
+                            <div class="text-xs font-bold text-gray-900">Years in Pune</div>
+                            <div class="text-[11px] text-gray-500">Established & trusted local shop</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                            <div class="text-2xl font-black text-green-600 mb-1">100%</div>
+                            <div class="text-xs font-bold text-gray-900">Original Spares</div>
+                            <div class="text-[11px] text-gray-500">With post-service warranty</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="fade-left">
+                    <div class="bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 rounded-3xl p-8 text-white shadow-2xl relative overflow-hidden">
+                        <div class="relative z-10 space-y-6">
+                            <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                                Doorstep Coverage
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold leading-snug">
+                                Fast Doorstep Technician Visits Across All Pune
+                            </h3>
+                            <p class="text-blue-100 text-sm leading-relaxed">
+                                We regularly serve Dhayari, Sinhgad Road, Anand Nagar, Manik Baug, Wadgaon Budruk, Warje, Kothrud, Katraj, Ambegaon, Narhe, and surrounding areas.
+                            </p>
+
+                            <div class="p-4 bg-white/10 rounded-xl space-y-2 text-xs">
+                                <div class="flex items-center"><i class="fas fa-check-circle text-yellow-300 mr-2"></i> On-time doorstep arrival</div>
+                                <div class="flex items-center"><i class="fas fa-check-circle text-yellow-300 mr-2"></i> Thorough electrical & safety inspection</div>
+                                <div class="flex items-center"><i class="fas fa-check-circle text-yellow-300 mr-2"></i> Easy UPI, Cash, and Card payments</div>
+                            </div>
+
+                            <a href="tel:+919604001387" class="block w-full text-center bg-yellow-400 text-gray-900 py-3.5 rounded-xl font-bold text-base hover:bg-yellow-300 transition shadow-lg">
+                                <i class="fas fa-phone-alt mr-2"></i> Call Pavan Abuj Directly: +91 9604001387
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white border-t border-gray-200" id="testimonials">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">Customer Stories</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3">What Our Clients Say in Pune</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex text-yellow-400 mb-3 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">
+                        "My front-load washing machine stopped draining and showed an error code. Pavan arrived within 45 minutes at my Sinhgad Road flat, cleared the drain filter, and replaced the inlet sensor. Honest and polite service!"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                            R
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm">Rahul Deshmukh</div>
+                            <div class="text-xs text-gray-500">Sinhgad Road, Pune</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex text-yellow-400 mb-3 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">
+                        "Got complete RO water purifier maintenance done. Replaced the membrane and sediment filters. He tested the TDS levels right in front of us. Superb water taste now. Highly recommended!"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+                            S
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm">Sunita Kulkarni</div>
+                            <div class="text-xs text-gray-500">Dhayari Phata, Pune</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex text-yellow-400 mb-3 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">
+                        "Our Whirlpool double door fridge was not cooling. Pavan Enterprises diagnosed the relay issue and refilled the gas cleanly. Charged very reasonably and explained everything clearly."
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">
+                            A
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-900 text-sm">Amit Joshi</div>
+                            <div class="text-xs text-gray-500">Warje, Pune</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Coverage in Pune -->
+    <section class="py-12 bg-gray-100 border-t border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">Doorstep Coverage</span>
+                <h3 class="text-2xl font-black text-gray-900 mt-1 mb-4">Areas We Serve Across Pune</h3>
+                <p class="text-gray-600 text-xs sm:text-sm mb-6">
+                    Our technicians provide rapid 60–90 minute doorstep arrival across the following localities:
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-semibold">
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Dhayari Phata</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Sinhgad Road</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Anand Nagar</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Manik Baug</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Wadgaon Budruk</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Narhe</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Ambegaon</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Katraj</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Warje</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Kothrud</span>
+                    <span class="bg-white border border-gray-200 text-gray-800 px-4 py-2 rounded-xl shadow-sm hover:border-blue-500 hover:text-blue-600 transition"><i class="fas fa-map-pin text-blue-500 mr-1.5"></i> Swargate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ) Section -->
+    <section class="py-16 bg-white border-t border-gray-200" id="faq">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">Got Questions?</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mt-1 mb-3">Frequently Asked Questions</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-4" data-aos="fade-up">
+                <!-- Q1 -->
+                <div class="border border-gray-200 rounded-2xl p-5 hover:border-blue-300 transition bg-gray-50/50">
+                    <h4 class="font-bold text-gray-900 text-base flex items-center">
+                        <i class="fas fa-question-circle text-blue-600 mr-2.5"></i> How fast can a technician arrive at my home?
+                    </h4>
+                    <p class="text-gray-600 text-sm mt-2 leading-relaxed pl-7">
+                        Our technicians are stationed locally around Dhayari Phata and Sinhgad Road. We typically reach your home within <strong>60 to 90 minutes</strong> of your booking, or at your chosen preferred time slot.
+                    </p>
+                </div>
+
+                <!-- Q2 -->
+                <div class="border border-gray-200 rounded-2xl p-5 hover:border-blue-300 transition bg-gray-50/50">
+                    <h4 class="font-bold text-gray-900 text-base flex items-center">
+                        <i class="fas fa-shield-alt text-green-600 mr-2.5"></i> Do you provide a warranty on repairs and spare parts?
+                    </h4>
+                    <p class="text-gray-600 text-sm mt-2 leading-relaxed pl-7">
+                        Yes! Every appliance repair and replaced component is backed by our <strong>30-Day Service Warranty</strong>. If the same problem reoccurs within the warranty period, we fix it promptly without hassle.
+                    </p>
+                </div>
+
+                <!-- Q3 -->
+                <div class="border border-gray-200 rounded-2xl p-5 hover:border-blue-300 transition bg-gray-50/50">
+                    <h4 class="font-bold text-gray-900 text-base flex items-center">
+                        <i class="fas fa-tools text-amber-600 mr-2.5"></i> Are genuine manufacturer spare parts used?
+                    </h4>
+                    <p class="text-gray-600 text-sm mt-2 leading-relaxed pl-7">
+                        Absolutely. We only use <strong>100% authentic, brand-compatible original spare parts</strong> with company packaging for LG, Samsung, Whirlpool, Godrej, Kent, Pureit, and other leading brands.
+                    </p>
+                </div>
+
+                <!-- Q4 -->
+                <div class="border border-gray-200 rounded-2xl p-5 hover:border-blue-300 transition bg-gray-50/50">
+                    <h4 class="font-bold text-gray-900 text-base flex items-center">
+                        <i class="fas fa-money-bill-wave text-cyan-600 mr-2.5"></i> When do I have to pay?
+                    </h4>
+                    <p class="text-gray-600 text-sm mt-2 leading-relaxed pl-7">
+                        You only pay <strong>after the technician completes the service and tests the appliance in front of you</strong>. We accept convenient payments via Google Pay, PhonePe, UPI, Cash, or Cards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW INTERACTIVE BOOKING FORM SECTION (Modern, Animated, WhatsApp Live Preview) -->
+    <section id="book" class="py-16 lg:py-24 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-down">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-xs">Easy Step-by-Step Booking</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mt-2 mb-3">Book Your Appliance Visit</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+                    Select your appliance and preferred time slot below. Your request is sent directly to Pavan Enterprises on WhatsApp with 1-click confirmation!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-7xl mx-auto items-start">
+                
+                <!-- Left: Interactive Form (7 Cols) -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-blue-100" data-aos="fade-right">
+                    <form id="contactForm" class="space-y-6">
+                        
+                        <!-- Step A: Select Appliance (Visual Animated Chips) -->
+                        <div>
+                            <label class="block text-gray-900 font-bold text-sm mb-2.5">
+                                <span class="bg-blue-600 text-white w-5 h-5 rounded-full inline-flex items-center justify-center text-xs mr-2">1</span>
+                                Select Appliance Type *
+                            </label>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                                <div class="service-chip active border-blue-600 bg-blue-50 p-3 rounded-2xl flex flex-col items-center text-center" data-service="Washing Machine Service">
+                                    <i class="fas fa-soap text-blue-600 text-xl mb-1.5"></i>
+                                    <span class="text-xs font-bold text-gray-800">Washing Machine</span>
+                                </div>
+                                <div class="service-chip p-3 rounded-2xl flex flex-col items-center text-center bg-gray-50" data-service="Refrigerator Repair">
+                                    <i class="fas fa-snowflake text-indigo-600 text-xl mb-1.5"></i>
+                                    <span class="text-xs font-bold text-gray-800">Refrigerator / Fridge</span>
+                                </div>
+                                <div class="service-chip p-3 rounded-2xl flex flex-col items-center text-center bg-gray-50" data-service="Microwave Oven Repair">
+                                    <i class="fas fa-bread-slice text-pink-600 text-xl mb-1.5"></i>
+                                    <span class="text-xs font-bold text-gray-800">Microwave Oven</span>
+                                </div>
+                                <div class="service-chip p-3 rounded-2xl flex flex-col items-center text-center bg-gray-50" data-service="RO Water Purifier Service">
+                                    <i class="fas fa-tint text-cyan-600 text-xl mb-1.5"></i>
+                                    <span class="text-xs font-bold text-gray-800">RO Water Purifier</span>
+                                </div>
+                                <div class="service-chip p-3 rounded-2xl flex flex-col items-center text-center bg-gray-50" data-service="Air Conditioner (AC) Service">
+                                    <i class="fas fa-fan text-emerald-600 text-xl mb-1.5"></i>
+                                    <span class="text-xs font-bold text-gray-800">Air Conditioner (AC)</span>
+                                </div>
+                                <div class="service-chip p-3 rounded-2xl flex flex-col items-center text-center bg-gray-50" data-service="Cooler / Other Appliance">
+                                    <i class="fas fa-wind text-amber-600 text-xl mb-1.5"></i>
+                                    <span class="text-xs font-bold text-gray-800">Cooler / Other</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step B: Preferred Time Slot -->
+                        <div>
+                            <label class="block text-gray-900 font-bold text-sm mb-2.5">
+                                <span class="bg-blue-600 text-white w-5 h-5 rounded-full inline-flex items-center justify-center text-xs mr-2">2</span>
+                                Preferred Visit Time *
+                            </label>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                                <div class="time-pill active text-xs font-semibold py-2 px-3 rounded-xl text-center" data-slot="Urgent (Within 2 Hours)">
+                                    ⚡ Urgent (2 Hrs)
+                                </div>
+                                <div class="time-pill text-xs font-semibold py-2 px-3 rounded-xl text-center bg-gray-50 text-gray-700" data-slot="Morning (9 AM - 12 PM)">
+                                    🌅 Morning (9-12)
+                                </div>
+                                <div class="time-pill text-xs font-semibold py-2 px-3 rounded-xl text-center bg-gray-50 text-gray-700" data-slot="Afternoon (12 PM - 4 PM)">
+                                    ☀️ Afternoon (12-4)
+                                </div>
+                                <div class="time-pill text-xs font-semibold py-2 px-3 rounded-xl text-center bg-gray-50 text-gray-700" data-slot="Evening (4 PM - 8 PM)">
+                                    🌆 Evening (4-8)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step C: Contact Details -->
+                        <div>
+                            <label class="block text-gray-900 font-bold text-sm mb-2.5">
+                                <span class="bg-blue-600 text-white w-5 h-5 rounded-full inline-flex items-center justify-center text-xs mr-2">3</span>
+                                Your Details & Address *
+                            </label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" id="formName" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none text-sm transition" placeholder="Your Name *">
+                                </div>
+                                <div>
+                                    <input type="tel" id="formPhone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none text-sm transition" placeholder="Phone Number *">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <input type="text" id="formLocality" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none text-sm transition" placeholder="Locality / Area (e.g. Dhayari, Sinhgad Rd, Warje...) *">
+                            </div>
+                            <div class="mt-3">
+                                <textarea id="formMessage" rows="2" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none text-sm transition resize-none" placeholder="Briefly describe the problem (e.g. washing machine vibrating, fridge not cooling...)"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Animated WhatsApp Submit Button -->
+                        <button type="submit" class="pulse-glow-green w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white py-4 rounded-2xl font-black text-base shadow-xl hover:shadow-2xl transition transform hover:scale-[1.01] flex items-center justify-center">
+                            <i class="fab fa-whatsapp text-2xl mr-2.5"></i> Send Booking on WhatsApp (Instant Response)
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Live WhatsApp Message Preview + Map Card (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6" data-aos="fade-left">
+                    
+                    <!-- Live WhatsApp Message Preview Bubble -->
+                    <div class="bg-gradient-to-br from-emerald-50 to-green-100 rounded-3xl p-6 border-2 border-green-300 shadow-md">
+                        <div class="flex items-center space-x-2 text-green-800 font-bold text-sm mb-3">
+                            <i class="fab fa-whatsapp text-xl text-green-600"></i>
+                            <span>Live WhatsApp Booking Preview</span>
+                        </div>
+                        <div id="whatsappPreviewBubble" class="bg-white p-4 rounded-2xl shadow-sm border border-green-200">
+                            <!-- Dynamically generated preview -->
+                        </div>
+                        <p class="text-[11px] text-green-800 mt-3 flex items-center">
+                            <i class="fas fa-check-double text-green-600 mr-1.5"></i> Sends directly to Pavan Enterprises at +91 9604001387
+                        </p>
+                    </div>
+
+                    <!-- Location & Google Map Embed -->
+                    <div class="bg-white rounded-3xl p-5 shadow-lg border border-gray-200 space-y-4">
+                        <div class="h-60 w-full rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.498801546252!2d73.80587287518972!3d18.461019682621033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2953a9926d2fb%3A0xb366b5797300fbf2!2sDhayari%20Phata%2C%20Pune%2C%20Maharashtra%20411041!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                                class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+
+                        <div class="flex items-start space-x-3 text-xs text-gray-700">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-lg mt-0.5 flex-shrink-0"></i>
+                            <span><strong>Shop no. 2, Akshay Sangam Apartment</strong>, Sinhgad Rd, above Rohan Wines, Dhayari Phata, Pune 411041</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons with Dual Ring Pulse -->
+    <!-- Direct Call Button -->
+    <a href="tel:+919604001387" class="call-float floating-element" title="Call Pavan Enterprises">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919604001387?text=Hi%20there!%20I%20want%20to%20know%20more%20about%20Pavan%20Enterprises%20services." class="whatsapp-float floating-element" target="_blank" title="Chat with us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white px-4 md:pl-0 pt-14 border-t border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg bg-white p-1">
+                            <a href="#home"><img src="./images/logo.svg" alt="Pavan Enterprises Logo" class="w-full h-full object-contain"></a>
+                        </div>
+                        <div>
+                            <a href="#home">
+                                <h1 class="text-lg font-black text-white leading-tight">PAVAN ENTERPRISES</h1>
+                                <p class="text-xs text-blue-400 font-medium">Sales & Service • Pune</p>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4 text-xs sm:text-sm leading-relaxed">
+                        Pune's trusted home appliance sales and service center based at Dhayari Phata, Sinhgad Road. Restoring comfort to homes with genuine spares and guaranteed repairs.
+                    </p>
+                    <p class="text-gray-500 text-xs">Proprietor: Pavan Abuj</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a class="text-gray-400 hover:text-white transition" href="#home">Home</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition" href="#services">Services</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition" href="#how-it-works">How It Works</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition" href="#appliances">Appliances We Repair</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition" href="#workspace">Our Field Work</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition" href="#about">About Us</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition" href="#book">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Our Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-xs sm:text-sm">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Washing Machine Service</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Refrigerator Gas Charging</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Microwave Magnetron Repair</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>RO + UV Water Filter Care</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Split & Window AC Jet Wash</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Cooler Motor Rewinding</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400 text-xs sm:text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 text-base mt-0.5 flex-shrink-0"></i>
+                            <span>Shop no. 2, Akshay Sangam Apartment, Sinhgad Rd, above Rohan Wines, Dhayari Phata, Pune, Maharashtra 411041</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-blue-500 mr-3 text-base flex-shrink-0"></i>
+                            <a href="tel:+919604001387" class="hover:text-white font-bold">+91 9604001387</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 mr-3 text-base flex-shrink-0"></i>
+                            <a href="mailto:abujpavan96@gmail.com" class="hover:text-white">abujpavan96@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-5 text-lg">
+                        <a href="https://wa.me/919604001387" class="text-gray-400 hover:text-green-400 transition"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+919604001387" class="text-gray-400 hover:text-yellow-400 transition"><i class="fas fa-phone-alt"></i></a>
+                        <a href="mailto:abujpavan96@gmail.com" class="text-gray-400 hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+                &copy; 2026 Pavan Enterprises. All rights reserved. | Professional Home Appliance Sales & Service in Pune.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Bottom Quick Action Bar (Highest Converting for Local Phone & WhatsApp) -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gray-950/95 backdrop-blur-lg border-t border-gray-800 p-2.5 px-3 flex gap-2.5 shadow-2xl">
+        <a href="tel:+919604001387" class="flex-1 bg-yellow-400 hover:bg-yellow-300 text-gray-950 font-black py-3 rounded-xl flex items-center justify-center space-x-2 text-sm shadow-md active:scale-95 transition">
+            <i class="fas fa-phone-alt text-base"></i>
+            <span>Call Now</span>
+        </a>
+        <a href="https://wa.me/919604001387?text=Hi%20Pavan%20Enterprises,%20I%20need%20appliance%20repair%20service%20in%20Pune." class="flex-1 bg-green-500 hover:bg-green-600 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 text-sm shadow-md active:scale-95 transition">
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 750,
+            once: true
+        });
+    </script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
