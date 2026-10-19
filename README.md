@@ -8,7 +8,7 @@ This repository contains the complete production-ready source code for the **Pav
 ## 📞 Client Details & Contacts
 - **Business Name:** Pavan Enterprises
 - **Proprietor:** Pavan Abuj
-- **Address:** Shop no. 2, Akshay Sangam Apartment, Sinhgad Rd, above Rohan Wines, Dhayari Phata, Pune, Maharashtra 411041
+- **Address:** SHOP NO. S-68, DESTINATION CENTRE - 1, Sinhgad Road, Nanded City, Pune, Maharashtra 411041
 - **Helpline / WhatsApp:** `+91 9604001387`
 - **Email:** `abujpavan96@gmail.com`
 

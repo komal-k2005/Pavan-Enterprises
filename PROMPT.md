@@ -1,4 +1,4 @@
-﻿# Pavan Enterprises — Home Appliance Sales & Service (Pune)
+# Pavan Enterprises — Home Appliance Sales & Service (Pune)
 ### Real-World Commercial Client Project Documentation & Master Prompt
 
 ---
@@ -8,7 +8,7 @@
 - **Proprietor:** Pavan Abuj
 - **Business Type:** Hyper-Local Doorstep Home Appliance Sales & Multi-Brand Repair Service
 - **Headquarters / Shop Address:**  
-  `Shop no. 2, Akshay Sangam Apartment, Sinhgad Rd, above Rohan Wines, Dhayari Phata, Pune, Maharashtra 411041`
+  `SHOP NO. S-68, DESTINATION CENTRE - 1, Sinhgad Road, Nanded City, Pune, Maharashtra 411041`
 - **Customer Helpline / Direct Call:** `+91 9604001387`
 - **Instant WhatsApp Booking:** `+91 9604001387`
 - **Official Email:** `abujpavan96@gmail.com`
@@ -60,7 +60,7 @@ Create a modern, high-converting, mobile-responsive single-page website for "Pav
 ### Business Details:
 - Business Name: Pavan Enterprises
 - Proprietor: Pavan Abuj
-- Address: Shop no. 2, Akshay Sangam Apartment, Sinhgad Rd, above Rohan Wines, Dhayari Phata, Pune, Maharashtra 411041
+- Address: SHOP NO. S-68, DESTINATION CENTRE - 1, Sinhgad Road, Nanded City, Pune, Maharashtra 411041
 - Primary Phone / Helpline: +91 9604001387
 - WhatsApp Booking: +91 9604001387
 - Email: abujpavan96@gmail.com
@@ -84,7 +84,7 @@ Create a modern, high-converting, mobile-responsive single-page website for "Pav
    - Verified Social Proof: Google 4.9★ rating badge (480+ happy homes in Sinhgad Rd).
    - Local Area Coverage: Interactive tags for all covered neighborhoods across Pune.
    - FAQ Accordion: Covers doorstep response times (60–90 mins), original spares, payment terms, and 30-day warranty.
-   - Google Maps Embed: Showing Shop no. 2, Akshay Sangam, Dhayari Phata, Pune.
+   - Google Maps Embed: Showing SHOP NO. S-68, DESTINATION CENTRE - 1, Nanded City, Pune 411041.
 
 4. Tech Stack:
    - HTML5, Tailwind CSS via CDN, Font Awesome 6.4, Google Fonts (Inter / Outfit), AOS (Animate On Scroll), and vanilla JavaScript.
